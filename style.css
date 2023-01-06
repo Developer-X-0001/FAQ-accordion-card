@@ -139,8 +139,71 @@ footer button:active {
 #arrow {
     transition: rotate 0.25s;
 }
-/* footer:hover {
-    padding: 1em;
-    margin-bottom: 1em;
-    font-size: 16px;
-} */
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow: auto;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30em;
+        width: 25em;
+    }
+    .faq {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        background: #ffffff;
+        height: 20em;
+        width: 25em;
+        border-radius: 0 0 1.5em 1.5em;
+    }
+    .images {
+        height: 10em;
+        width: 25em; 
+        overflow: hidden;
+    }
+    .desc {
+        margin-top: 0;
+        text-align: center;
+        padding: 0em 0 0 0;
+    }
+    .woman {
+        position: absolute;
+        width: 20em;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    .pattern {
+        position: absolute;
+        width: 20em;
+        left: 50%;
+        transform: translate(-50%, -130%);
+    }
+    .box {
+        width: 7em;
+        position: absolute;
+        transform: translate(40%, -260%);
+    }
+    .desc {
+        margin-top: 0;
+    }
+    .questions {
+        margin-top: 1em;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 13em;
+        padding-right: 1em;
+        width: 20em;
+    }
+    footer section {
+        background: white;
+        border-radius: 1em;
+        margin-bottom: -3.5em;
+        font-size: 12px;
+        padding: 1em;
+        transition: margin-bottom 0.5s;
+    }
+}
