@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js"></script>  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+  <main>
+    <div class="images">
+      <img class="box" src="/images/illustration-box-desktop.svg" alt="orange box">
+      <img class="woman" src="/images/illustration-woman-online-desktop.svg" alt="woman with a screen">
+      <img class="pattern" src="/images/bg-pattern-desktop.svg" alt="pattern">
+    </div>
+    <div class="faq">
+      <div class="desc">
+        <h1>FAQ</h1>
+        <div class="questions">
+          <section class="question">
+            <p id="q1" onclick="q1_click()">How many team members can I invite?</p><img id="q1_arrow" src="/images/icon-arrow-down.svg" alt="" onclick="q1_click()">
+            <p class="answer" id="ans1">You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+          </section>
+          <section class="question">
+            <p id="q2" onclick="q2_click()">What is the maximum file upload size?</p><img id="q2_arrow" src="/images/icon-arrow-down.svg" alt="" onclick="q2_click()">
+            <p class="answer" id="ans2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </section>
+          <section class="question">
+            <p id="q3" onclick="q3_click()">How do I reset my password?</p><img id="q3_arrow" src="/images/icon-arrow-down.svg" alt="" onclick="q3_click()">
+            <p class="answer" id="ans3">Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p>
+          </section>
+          <section class="question">
+            <p id="q4" onclick="q4_click()">Can I cancel my subscription?</p><img id="q4_arrow" src="/images/icon-arrow-down.svg" alt="" onclick="q4_click()">
+            <p class="answer" id="ans4">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </section>
+          <section class="question">
+            <p id="q5" onclick="q5_click()">Do you provide additional support?</p><img id="q5_arrow" src="/images/icon-arrow-down.svg" alt="" onclick="q5_click()">
+            <p class="answer" id="ans5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution" id="footer">
+    <button id="footbtn" onclick="footer()"><img id="arrow" src="/images/icon-arrow-down.svg" alt=""></button>
+    <section id="foot">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Developer-X-0001" target="_blank">Developer X</a>.
+    </section>
+  </footer>
+</body>
+</html>
